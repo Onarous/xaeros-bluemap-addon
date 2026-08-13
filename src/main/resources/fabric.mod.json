@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "xaeros_bluemap_addon",
+  "version": "${version}",
+  "name": "xaeros bluemap addon",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/xaeros_bluemap_addon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "onarous.xaeros_bluemap_addon.client.Xaeros_bluemap_addonDataGenerator"
+    ],
+    "client": [
+      "onarous.xaeros_bluemap_addon.client.Xaeros_bluemap_addonClient"
+    ],
+    "main": [
+      "onarous.xaeros_bluemap_addon.Xaeros_bluemap_addon"
+    ]
+  },
+  "mixins": [
+    "xaeros_bluemap_addon.mixins.json",
+    {
+      "config": "xaeros_bluemap_addon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
