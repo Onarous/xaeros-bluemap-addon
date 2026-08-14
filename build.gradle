@@ -31,6 +31,7 @@ fabricApi {
 
 repositories {
     maven { url 'https://maven.fabricmc.net/' }
+    maven { url 'https://chocolateminecraft.com/maven/' }
 }
 
 dependencies {
@@ -41,6 +42,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    modCompileOnly "xaero.map:xaeroworldmap-fabric-26.1.2:1.44.2"
 }
 
 processResources {

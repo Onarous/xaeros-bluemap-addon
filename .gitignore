@@ -28,3 +28,15 @@ tile.bin
 rawtile.bin
 xaeros_bluemap_sync.txt
 settings.json
+
+# Root-level dev/scratch tests (not part of the mod)
+FetchTest.java
+InspectTile.java
+MapTile.java
+PrbmFullParserTest.java
+PrbmParserTest.java
+RawFetch.java
+TestClient.java
+TestClient2.java
+TestTile.java
+TestTile2.java
